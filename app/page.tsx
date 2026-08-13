@@ -9,6 +9,7 @@ import JourneyOfUsSection from "@/components/milestoneSection";
 import PartnersSection from "@/components/PartnerSection";
 import GetInvolvedSection from "@/components/GetInvolvedSection";
 import ContactSection from "@/components/ContactSection";
+import FooterSection from "@/components/FooterSection";
 
 export default function Home() {
     return (
@@ -24,6 +25,7 @@ export default function Home() {
             <PartnersSection />
             <GetInvolvedSection />
             <ContactSection />            
+            <FooterSection />
         </main>
     );
 }

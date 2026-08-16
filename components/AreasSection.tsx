@@ -63,7 +63,7 @@ const areas = [
 export default function AreasWeWorkSection() {
   return (
     <section
-      className={`${fraunces.variable} ${inter.variable} border-t border-[#0B2B22]/10 bg-white px-6 py-28 font-[family-name:var(--font-body)] lg:px-10`}
+      className={`${fraunces.variable} ${inter.variable} border-t bg-brand-primary bg-white px-6 py-28 font-[family-name:var(--font-body)] lg:px-10`}
     >
       <div className="mx-auto max-w-7xl">
         {/* Eyebrow */}
@@ -98,7 +98,7 @@ export default function AreasWeWorkSection() {
               />
 
               {/* Gradient overlay — darkens further on hover */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0B2B22]/90 via-[#0B2B22]/20 to-transparent transition-opacity duration-500 group-hover:from-[#0B2B22]/95" />
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-primary/90 via-brand-primary/20 to-transparent transition-opacity duration-500 group-hover:from-brand-primary/100" />
 
               {/* Gold hover ring */}
               <div className="absolute inset-0 rounded-xl ring-1 ring-inset ring-white/0 transition-all duration-500 group-hover:ring-[#C9A227]/60" />

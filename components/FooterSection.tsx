@@ -14,7 +14,7 @@ const quickLinks = [
 export default function FooterSection() {
   return (    
     <footer
-      className={`${fraunces.variable} ${inter.variable} relative overflow-hidden bg-[#0B2B22] px-6 pt-20 pb-8 font-[family-name:var(--font-body)] lg:px-10`}
+      className={`${fraunces.variable} ${inter.variable} relative overflow-hidden bg-brand-primary px-6 pt-20 pb-8 font-[family-name:var(--font-body)] lg:px-10`}
     >
       <div className="mx-auto max-w-7xl">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-12">

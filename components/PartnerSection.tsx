@@ -1,10 +1,10 @@
 import { fraunces, inter } from "@/lib/fonts";
 
 const partners = [
-  { name: "World Diverse Sri Lanka", category: "Training Partner" },
+  { name: "World View Sri Lanka", category: "Training Partner" },
   { name: "CARE International", category: "Livelihood Support" },
   { name: "Sri Lanka Canada Development Fund", category: "Funding Partner" },
-  { name: "SEP Foundation", category: "Funding Partner" },
+  { name: "SAFE Foundation", category: "Funding Partner" },
   { name: "Rambawa Community Empowerment Foundation", category: "Funding Partner" },
   { name: "Central Environmental Authority", category: "Registering Body" },
   { name: "Anuradhapura District Secretariat", category: "Government Partner" },

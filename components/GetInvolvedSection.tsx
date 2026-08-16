@@ -55,7 +55,7 @@ export default function GetInvolvedSection() {
               key={title}
               className={`flex flex-col rounded-2xl p-8 ${
                 highlighted
-                  ? "bg-[#0B2B22] text-white"
+                  ? "bg-brand-primary text-white"
                   : "border border-[#0B2B22]/10 bg-white text-[#0B2B22]"
               }`}
             >
@@ -87,7 +87,7 @@ export default function GetInvolvedSection() {
                 className={`mt-6 inline-flex w-fit items-center rounded-full px-6 py-3 text-sm font-semibold uppercase tracking-[0.1em] transition-colors ${
                   highlighted
                     ? "bg-[#C9A227] text-[#0B2B22] hover:bg-white"
-                    : "bg-[#0B2B22] text-white hover:bg-[#8A6E14]"
+                    : "bg-brand-primary text-white hover:bg-[#8A6E14]"
                 }`}
               >
                 {cta}

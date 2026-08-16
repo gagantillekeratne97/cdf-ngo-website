@@ -5,6 +5,12 @@
   --foreground: #171717;
 }
 
+@theme {
+  --color-brand-primary: #0b1f3f; /* logo navy — was #0B2B22 green */
+  --color-brand-accent: #c9a227; /* gold — unchanged */
+  --color-brand-cream: #f7f5f0; /* off-white — unchanged */
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

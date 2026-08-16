@@ -9,7 +9,7 @@ export default function ImpactSection() {
     ];
 
     return (
-        <section className={`${fraunces.variable} ${inter.variable} relative overflow-hidden bg-[#0B2B22] px-6 py-20 font-[family-name:var(--font-body)] lg:px-10`}>
+        <section className={`${fraunces.variable} ${inter.variable} relative overflow-hidden bg-brand-primary px-6 py-20 font-[family-name:var(--font-body)] lg:px-10`}>
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-2 lg:grid-cols-4">
                     {stats.map((stat) => (

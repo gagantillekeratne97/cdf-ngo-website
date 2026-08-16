@@ -11,7 +11,7 @@ export default function OurStorySection() {
           <div className="lg:col-span-5">
             <div className="relative aspect-[4/5] w-full max-w-md">
               <Image
-                src="/images/areas/office-team-photo.jpg"
+                src="/images/areas/community-development.jpg"
                 alt="Community Development Foundation field team at work"
                 fill
                 className="object-cover"

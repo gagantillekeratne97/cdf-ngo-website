@@ -94,7 +94,7 @@ export default function ContactSection() {
               <button
                 type="submit"
                 disabled={status === "submitting"}
-                className="inline-flex items-center rounded-full bg-[#0B2B22] px-8 py-3 text-sm font-semibold uppercase tracking-[0.1em] text-white transition-colors hover:bg-[#8A6E14] disabled:opacity-60"
+                className="inline-flex items-center rounded-full bg-brand-primary px-8 py-3 text-sm font-semibold uppercase tracking-[0.1em] text-white transition-colors hover:bg-[#8A6E14] disabled:opacity-60"
               >
                 {status === "submitting" ? "Sending..." : status === "sent" ? "Sent — Thank You" : "Send Message"}
               </button>
@@ -103,7 +103,7 @@ export default function ContactSection() {
 
           {/* Org details */}
           <div className="lg:col-span-5">
-            <div className="rounded-2xl bg-[#0B2B22] p-8">
+            <div className="rounded-2xl bg-brand-primary p-8">
               <p className="font-[family-name:var(--font-display)] text-xl font-medium text-white">
                 Community Development Foundation
               </p>

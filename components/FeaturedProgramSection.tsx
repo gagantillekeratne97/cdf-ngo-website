@@ -9,7 +9,7 @@ export default function FeaturedProgramSection() {
             <Image src="/images/areas/community-development.jpg"
             alt="CDF volunteers cleaning up after Cyclone Ditwah" fill className="object-cover"/>                        
 
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0B2B22]/95 via-[#0B2B22]/50 to-[#0B2B22]/10" />            
+            <div className="absolute inset-0 bg-gradient-to-t from-brand-primary/95 via-brand-primary/50 to-[#0B2B22]/10" />            
 
             <div className="relative z-10 flex min-h-[600px] items-end px-6 py-16 lg:py-20">
                 <div className="max-w-2xl">

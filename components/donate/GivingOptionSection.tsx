@@ -1,29 +1,22 @@
 "use client";
 
 import { useState } from "react";
-import { Copy, Check } from "lucide-react";
+import { Mail } from "lucide-react";
 import Link from "next/link";
 import { fraunces, inter } from "@/lib/fonts";
 
 type GivingMethod = "bank" | "online" | "contact";
 
-const paymentDetails = [
-  { label: "Account Name", value: "[Add account name]" },
-  { label: "Bank", value: "[Add bank name]" },
-  { label: "Account Number", value: "[Add account number]" },
-  { label: "Branch", value: "[Add branch name]" },
-];
+const DONATION_EMAIL = "Cdfmaradankadawala93@gmail.com";
+
+function buildMailtoLink(subject: string, body: string) {
+  return `mailto:${DONATION_EMAIL}?subject=${encodeURIComponent(
+    subject
+  )}&body=${encodeURIComponent(body)}`;
+}
 
 export default function GivingOptionsSection() {
   const [method, setMethod] = useState<GivingMethod>("bank");
-  const [copied, setCopied] = useState(false);
-
-  async function handleCopy() {
-    const text = paymentDetails.map((d) => `${d.label}: ${d.value}`).join("\n");
-    await navigator.clipboard.writeText(text);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  }
 
   return (
     <section
@@ -63,42 +56,31 @@ export default function GivingOptionsSection() {
           {/* Method content */}
           <div className="mt-8">
             {method === "bank" && (
-              <div>
-                <div className="space-y-4 rounded-xl bg-brand-cream p-6">
-                  {paymentDetails.map((detail) => (
-                    <div key={detail.label}>
-                      <p className="text-xs font-semibold uppercase tracking-[0.15em] text-brand-accent">
-                        {detail.label}
-                      </p>
-                      <p className="mt-1 text-base text-brand-primary">{detail.value}</p>
-                    </div>
-                  ))}
-                </div>
-                <button
-                  onClick={handleCopy}
-                  className="mt-5 flex w-full items-center justify-center gap-2 rounded-full bg-brand-primary px-6 py-3 text-sm font-semibold uppercase tracking-[0.1em] text-white transition-colors hover:bg-brand-accent hover:text-brand-primary"
-                >
-                  {copied ? (
-                    <>
-                      <Check className="h-4 w-4" strokeWidth={2} />
-                      Copied
-                    </>
-                  ) : (
-                    <>
-                      <Copy className="h-4 w-4" strokeWidth={2} />
-                      Copy Details
-                    </>
+              <div className="rounded-xl bg-brand-cream p-6 text-center">
+                <p className="text-base leading-7 text-[#333F38]">
+                  For security, we don't publish our bank account details
+                  online. Request them directly and our team will reply with
+                  everything you need to complete a bank transfer.
+                </p>
+                
+                <a  href={buildMailtoLink(
+                    "Request for Bank Transfer Details",
+                    "Hello,\n\nI'd like to make a donation via bank transfer. Could you please share your account details?\n\nThank you."
                   )}
-                </button>
+                  className="mt-5 inline-flex items-center gap-2 rounded-full bg-brand-primary px-6 py-3 text-sm font-semibold uppercase tracking-[0.1em] text-white transition-colors hover:bg-brand-accent hover:text-brand-primary"
+                >
+                  <Mail className="h-4 w-4" strokeWidth={2} />
+                  Request Bank Details
+                </a>
               </div>
             )}
 
             {method === "online" && (
               <div className="rounded-xl bg-brand-cream p-6 text-center">
                 <p className="text-base leading-7 text-[#333F38]">
-                  Online payment is coming soon. In the meantime, please use
-                  bank transfer or contact our team directly to arrange your
-                  donation.
+                  Online payment is coming soon. In the meantime, please
+                  request our bank transfer details or contact our team
+                  directly to arrange your donation.
                 </p>
               </div>
             )}

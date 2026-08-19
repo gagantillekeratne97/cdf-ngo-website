@@ -5,7 +5,7 @@ const boardMembers = [
   {
     name: "S.H. Razik",
     role: "Founding Executive Director",
-    image: "/images/board/karunathilaka.jpg",
+    image: "/images/board/razik.jpg",
     featured: true,
   },
   {
@@ -21,7 +21,7 @@ const boardMembers = [
   {
     name: "T.M. Anura Thannakoon",
     role: "Secretary",
-    image: "/images/board/razik.jpg",
+    image: "/images/board/thannakoon.jpg",
   },
   {
     name: "D.M. Jayanthikumari Veerakoon",
@@ -41,7 +41,7 @@ const boardMembers = [
   {
     name: "R. Karunathilaka",
     role: "Technical Advisor",
-    image: "/images/board/thannakoon.jpg",
+    image: "/images/board/karunathilaka.jpg",
   },
 ];
 
